@@ -9,7 +9,7 @@ class Category(db.Model):
                             cascade='all, delete', lazy=True)
 
     def __repr__(self):
-        return self
+        return self.category_name
 
 
 class Task(db.Model):
